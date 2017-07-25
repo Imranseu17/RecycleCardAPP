@@ -20,8 +20,8 @@ public class Main2Activity extends AppCompatActivity {
         imageView = (ImageView)findViewById(R.id.imageview);
         textView = (TextView)findViewById(R.id.textView);
         entity = (User_entity)getIntent().getSerializableExtra("Entity");
-        imageView.setImageResource(Integer.parseInt(" "+entity));
-        textView.setText(" "+entity);
+        imageView.setImageResource(entity.getImage());
+        textView.setText(entity.getPersonName());
 
 
 
